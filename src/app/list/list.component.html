@@ -1,0 +1,10 @@
+<div>
+list
+  请尝试点击上半部分的li。
+  <ul>
+    <li *ngFor="let item of list" (click)="removeUser(item.id)">{{item.name}}</li>
+  </ul>
+  <app-list-body></app-list-body>
+  <br/>
+  <a routerLink="/model">to counter demo</a>
+</div>
